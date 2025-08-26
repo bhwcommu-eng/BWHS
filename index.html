@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>จดหมายเชิญสอบเข้า - โรงเรียนบวรหัสดินทรวงศ์</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png"> <!-- โลโก้ favicon -->
+</head>
+<body>
+  <!-- ส่วนหัว -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="โลโก้โรงเรียน" class="logo">
+    <h1>โรงเรียนบวรหัสดินทรวงศ์</h1>
+  </header>
+
+  <!-- ฟอร์ม -->
+  <section class="form-container">
+    <h2>ระบบสร้างจดหมายเชิญสอบเข้า</h2>
+    <input type="text" id="studentName" placeholder="กรอกชื่อนักเรียน">
+    <button onclick="generateLetter()">สร้างจดหมาย</button>
+  </section>
+
+  <!-- จดหมาย -->
+  <section class="letter-container" id="letter">
+    <img src="images/bg.jpg" class="letter-bg" alt="จดหมาย">
+    <div class="letter-text">
+      <p><b>เรียน.</b> <span id="nameField">________________</span></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © 2568 โรงเรียนบวรหัสดินทรวงศ์ | ระบบสร้างจดหมายเชิญสอบเข้า
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
