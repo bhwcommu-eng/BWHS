@@ -1,3 +1,11 @@
+/* โหลดฟอนต์ JS Chanok จากไฟล์ TTF */
+@font-face {
+  font-family: "JS Chanok";
+  src: url("fonts/JSChanok.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "JS Chanok", sans-serif;
   margin: 0;
@@ -77,8 +85,8 @@ body {
 
 .letter-text {
   position: absolute;
-  top: 200px;
-  left: 350px;
+  top: 190px;
+  left: 150px;
   font-size: 22px;
   color: #2c1a0c;
   text-align: left;
@@ -92,4 +100,3 @@ body {
   color: #fff;
   font-size: 14px;
 }
-
