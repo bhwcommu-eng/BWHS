@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>จดหมายเชิญสอบเข้า - โรงเรียนบวรหัสดินทรวงศ์</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- ฟอนต์ JS Chanok -->
+  <link href="https://fonts.googleapis.com/css2?family=JS+Chanok&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="logooooooo.png"> <!-- โลโก้ favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
-  <!-- ส่วนหัว -->
   <header class="site-header">
-    <img src="logooooooo.png" alt="โลโก้โรงเรียน" class="logo">
+    <img src="images/logo.png" alt="โลโก้โรงเรียน" class="logo">
     <h1>โรงเรียนบวรหัสดินทรวงศ์</h1>
   </header>
 
-  <!-- ฟอร์ม -->
   <section class="form-container">
     <h2>ระบบสร้างจดหมายเชิญสอบเข้า</h2>
     <input type="text" id="studentName" placeholder="กรอกชื่อนักเรียน">
-    <button onclick="generateLetter()">สร้างจดหมาย</button>
+    <button onclick="generateLetter()">แสดงจดหมาย</button>
+    <button onclick="downloadLetter()">ดาวน์โหลด PNG</button>
   </section>
 
-  <!-- จดหมาย -->
   <section class="letter-container" id="letter">
-    <img src="Beige and Brown Old Paper Vintage Notes A4 Document.jpg" class="letter-bg" alt="จดหมาย">
+    <img src="images/bg.jpg" class="letter-bg" alt="จดหมาย">
     <div class="letter-text">
       <p><b>เรียน.</b> <span id="nameField">________________</span></p>
     </div>
@@ -33,6 +32,8 @@
     © 2568 โรงเรียนบวรหัสดินทรวงศ์ | ระบบสร้างจดหมายเชิญสอบเข้า
   </footer>
 
+  <!-- html2canvas สำหรับดาวน์โหลด PNG -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
