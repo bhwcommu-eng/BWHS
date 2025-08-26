@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <title>จดหมายเชิญสอบเข้า - โรงเรียนบวรหัสดินทรวงศ์</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="logooooooo.png">
 </head>
 <body>
+  <header>
+    <img src="images/logo.png" alt="โลโก้โรงเรียน" class="logo">
+    <h1>โรงเรียนบวรหัสดินทรวงศ์</h1>
+  </header>
+
   <section class="form-container">
     <h2>ระบบสร้างจดหมายเชิญสอบเข้า</h2>
     <input type="text" id="studentName" placeholder="กรอกชื่อนักเรียน">
-    <button onclick="generateLetter()">แสดงจดหมาย</button>
-    <button onclick="downloadLetter()">ดาวน์โหลด PNG</button>
+    <div class="buttons">
+      <button onclick="generateLetter()">แสดงจดหมาย</button>
+      <button onclick="downloadLetter()">ดาวน์โหลด PNG</button>
+    </div>
   </section>
 
   <section class="letter-container" id="letter">
-    <img src="Beige and Brown Old Paper Vintage Notes A4 Document.jpg" class="letter-bg" alt="จดหมาย">
-    <div class="letter-text">
-      <span id="nameField"></span>
+    <div class="letter-bg">
+      <div class="letter-text">
+        เรียน. <span id="nameField"></span>
+      </div>
     </div>
   </section>
 
