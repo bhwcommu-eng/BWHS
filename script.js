@@ -13,7 +13,4 @@ function downloadLetter() {
   });
 }
 
-// อัปเดตแบบ realtime
 document.getElementById("studentName").addEventListener("input", generateLetter);
-
-
