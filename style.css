@@ -44,7 +44,7 @@ body {
 
 .letter-bg {
   /* ใช้ภาพ BG ของคุณ */
-  background-image: url('Beige and Brown Old Paper Vintage Notes A4 Document.jpg');
+  background-image: url('bg.jpg');
   background-size: cover;
   background-position: center;
   border: 2px solid #c4b59f;
